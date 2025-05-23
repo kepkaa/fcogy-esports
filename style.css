@@ -332,6 +332,116 @@ p {
 .instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
 .youtube { background: #FF0000; }
 
+/* Стили для секции соцсетей владельца */
+.owner-social-section {
+    margin-top: 50px;
+    position: relative;
+}
+
+.owner-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.owner-icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: var(--neon-purple);
+    text-shadow: 0 0 10px var(--neon-purple);
+    animation: flicker 3s infinite alternate;
+}
+
+.owner-title {
+    font-size: 1.5rem;
+    color: var(--neon-purple);
+    margin: 0;
+    position: relative;
+    padding-right: 20px;
+    background: linear-gradient(90deg, var(--neon-purple), transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.owner-line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-purple), rgba(157, 0, 255, 0.1));
+    margin-left: 20px;
+}
+
+.owner-grid {
+    margin-top: 20px;
+}
+
+.owner-btn {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(157, 0, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.owner-btn:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(157, 0, 255, 0.3);
+    border-color: var(--neon-purple);
+}
+
+.owner-platform {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.owner-username {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    display: block;
+}
+
+/* Анимация для кнопок владельца */
+.owner-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        transparent,
+        transparent,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent,
+        transparent,
+        transparent
+    );
+    transform: rotate(30deg);
+    animation: shine 3s infinite;
+    opacity: 0;
+}
+
+@keyframes shine {
+    0% {
+        transform: rotate(30deg) translate(-30%, -30%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(30deg) translate(30%, 30%);
+        opacity: 0;
+    }
+}
+
+.owner-btn:hover::before {
+    animation: shine 0.75s;
+}
+
 /* ===== СТИЛИ ДЛЯ СТРАНИЦЫ 404 ===== */
 .error-container {
     text-align: center;
