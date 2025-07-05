@@ -19,3 +19,5 @@ YouTube Kisgerl : https://youtube.com/@k1sgerl17?si=29scGGKPn4FgXirJ,
 TikTok : https://www.tiktok.com/@fcogy.esports3?_t=ZN-8tUUUGTYKxy&_r=1,
 
 TikTok Kisgerl : https://www.tiktok.com/@k1sgerl17?_t=ZT-8wT9reykjE2&_r=1
+
+WebSait: https://kepkaa.github.io/fcogy-esports/index.html
