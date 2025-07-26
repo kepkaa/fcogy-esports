@@ -4,50 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас | Fcogy eSports</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1249084996900098081/1391156401266491523/fcogy_image.png?ex=686adedc&is=68698d5c&hm=1d274a1129b67f9d529aff45c0e4e3981451e3f373be037acb89f4d454bc236f&=&format=webp&quality=lossless&width=645&height=645" type="image/png">
     <link rel="stylesheet" href="style.css">
-<link rel="icon" href="https://media.discordapp.net/attachments/1249084996900098081/1391156401266491523/fcogy_image.png?ex=686adedc&is=68698d5c&hm=1d274a1129b67f9d529aff45c0e4e3981451e3f373be037acb89f4d454bc236f&=&format=webp&quality=lossless&width=645&height=645" type="image/png" />
 </head>
 <body>
-    <div class="particles"></div>
-    <div class="glitch-overlay hidden"></div>
-    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <span class="logo-flicker">FCOGY</span> ESPORTS
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span>FCOGY</span> ESPORTS
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <a href="index.html" class="nav-link">Главная</a>
+                
+                <a href="social.html" class="nav-link">Соцсети</a>
+                <a href="news.html" class="nav-link">Новости</a>
+            </nav>
         </div>
     </header>
-    
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="social.html">Ссылки</a>
-        <a href="404.html" class="easter-egg">Секретная страница</a>
-    </nav>
-    
-    <div class="container">
-        <section class="about">
-            <p>FCOGY ESPORTS - киберспортивная организация по фортнайту и кс2. Мы имеем большие перспективы и уже не раз доказывала свои возможности на киберспорт арене! Мы ждем абсолютно каждого в своей организации и готовы ответить на все ваши вопросы. Ждем именно тебя 😊</p>
-            
-            <div class="owner-card">
-                <h3>Владелец</h3>
-                <div class="owner-name">k1sgerl</div>
-            </div>
-            
-            <div class="social-media">
-                <h3>Соц.сети организации</h3>
-                <div class="social-grid">
-                    <a href="https://www.tiktok.com/@fcogy.esports3?_t=ZN-8tUUUGTYKxy&_r=1" target="_blank" class="social-btn tiktok">TikTok</a>
-                    <a href="https://x.com/fcogy7/status/1884485779306504200?s=46" target="_blank" class="social-btn twitter">Twitter FCOGY</a>
-                    <a href="https://t.me/FCOGY" target="_blank" class="social-btn telegram">Telegram FCOGY</a>
-                    <a href="https://discord.gg/53wY7eGjR9" target="_blank" class="social-btn discord">Discord FCOGY</a>
+
+    <!-- Main Content -->
+    <main class="right-aligned-page">
+        <div class="right-aligned-container">
+            <section class="about-page">
+                <h1 class="section-title">О нас</h1>
+                <p>FCOGY ESPORTS - киберспортивная организация по фортнайту и кс2. Мы имеем большие перспективы и уже не раз доказывала свои возможности на киберспорт арене! Мы ждем абсолютно каждого в своей организации и готовы ответить на все ваши вопросы. Ждем именно тебя 😊</p>
+                
+                <div class="owner-card">
+                    <h3>Владелец</h3>
+                    <div class="owner-name">k1sgerl</div>
+                </div>
+                
+                <div class="social-media">
+                    <h3 class="section-title">Соц.сети организации</h3>
+                    <div class="social-grid">
+                        <a href="https://www.tiktok.com/@fcogy.esports3" target="_blank" class="social-btn tiktok">
+                            <span>TikTok</span>
+                            <span class="platform-name">Официальный TikTok</span>
+                        </a>
+                        <a href="https://x.com/fcogy7/status/1884485779306504200?s=46" target="_blank" class="social-btn twitter">
+                            <span>Twitter</span>
+                            <span class="platform-name">Официальный Twitter</span>
+                        </a>
+                        <a href="https://t.me/FCOGY" target="_blank" class="social-btn telegram">
+                            <span>Telegram</span>
+                            <span class="platform-name">Официальный канал</span>
+                        </a>
+                        <a href="https://discord.gg/53wY7eGjR9" target="_blank" class="social-btn discord">
+                            <span>Discord</span>
+                            <span class="platform-name">Официальный сервер</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span>FCOGY</span> ESPORTS
+                </div>
+                <p class="footer-about">
+                    Профессиональная киберспортивная организация, выступающая 
+                    на международной арене в дисциплинах CS2 и Fortnite.
+                </p>
+                <div class="footer-social">
+                    <a href="https://vk.com/fcogy7team" class="social-link" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://t.me/FCOGY" class="social-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://discord.gg/53wY7eGjR9" class="social-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@fcogy-y4i" class="social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-    </div>
-    
-    <footer>
-        <p>© <span class="year"></span> Fcogy eSports. Все права защищены.</p>
+            <div class="footer-col">
+                <h3 class="footer-title">Навигация</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="index.html">Главная</a></li>
+                    <li class="footer-link"><a href="about.html">О нас</a></li>
+                    <li class="footer-link"><a href="social.html">Соцсети</a></li>
+                    <li class="footer-link"><a href="news.html">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-links">
+                    <li class="footer-link">
+                        <a href="mailto:fcogy@example.com">
+                            <i class="fas fa-envelope"></i> fcogy@example.com
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://t.me/ki7g07" target="_blank">
+                            <i class="fab fa-telegram"></i> Владелец: k1sgerl
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© <span class="year"></span> <a href="https://t.me/FCOGY" target="_blank">Fcogy eSports</a>. Все права защищены.</p>
+            <p class="developer">Сайт разработал: kepkaa ❤️</p>
+        </div>
     </footer>
-    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
