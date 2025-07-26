@@ -4,61 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная | Fcogy eSports</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
- <link rel="icon" href="https://media.discordapp.net/attachments/1249084996900098081/1391156401266491523/fcogy_image.png?ex=686adedc&is=68698d5c&hm=1d274a1129b67f9d529aff45c0e4e3981451e3f373be037acb89f4d454bc236f&=&format=webp&quality=lossless&width=645&height=645" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1249084996900098081/1391156401266491523/fcogy_image.png?ex=686adedc&is=68698d5c&hm=1d274a1129b67f9d529aff45c0e4e3981451e3f373be037acb89f4d454bc236f&=&format=webp&quality=lossless&width=645&height=645" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="particles"></div>
-    <div class="glitch-overlay hidden"></div>
-    
-    <header class="animate__animated animate__fadeInDown">
-        <div class="logo">
-            <span class="logo-flicker">FCOGY</span> ESPORTS
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="glitch" data-text="FCOGY">FCOGY</span> ESPORTS
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="social.html" class="nav-link">Соцсети</a>
+                <a href="news.html" class="nav-link">Новости</a>
+            </nav>
         </div>
     </header>
-    
-    <nav class="animate__animated animate__fadeIn">
-        <a href="about.html">О нас</a>
-        <a href="social.html">Ссылки</a>
-        <a href="404.html" class="easter-egg">Секретная страница</a>
-    </nav>
-    
-    <div class="container">
-        <section class="welcome animate__animated animate__zoomIn">
-            <div class="neon-line"></div>
-            <h2>Приветствуем тебя на нашем сайте</h2>
-            <p>Здесь ты узнаешь о нашей организации</p>
-            
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Киберспорт</h3>
-                    <p>Мы имеем профессиональную команду по кс2 и по фортнайту</p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate__animated animate__fadeInDown">
+                Добро пожаловать в <span>Fcogy eSports</span>
+            </h1>
+            <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-1s">
+                Профессиональная киберспортивная организация, выступающая на международной арене. 
+                Мы объединяем талантливых игроков и создаем сильное сообщество.
+            </p>
+            <a href="about.html" class="cta-button animate__animated animate__fadeInUp animate__delay-1s">
+                Узнать больше <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Наши преимущества</h2>
+        <div class="features-grid">
+            <div class="feature-card animate__animated animate__fadeInUp">
+                <div class="feature-icon">
+                    <i class="fas fa-gamepad"></i>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Турниры</h3>
-                    <p>Участвуем в крупных соревнованиях, а так же мы проводим наши турниры</p>
+                <h3 class="feature-title">Профессиональные команды</h3>
+                <p class="feature-description">
+                    Мы имеем сильные команды по CS2 и Fortnite, которые регулярно участвуют 
+                    в турнирах и показывают высокие результаты.
+                </p>
+            </div>
+            <div class="feature-card animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="feature-icon">
+                    <i class="fas fa-trophy"></i>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Комьюнити</h3>
-                    <p>Активное и дружное сообщество</p>
+                <h3 class="feature-title">Турнирная активность</h3>
+                <p class="feature-description">
+                    Участвуем в крупных соревнованиях и организуем собственные турниры 
+                    с призовыми фондами для игроков всех уровней.
+                </p>
+            </div>
+            <div class="feature-card animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Активное сообщество</h3>
+                <p class="feature-description">
+                    Наше дружное комьюнити - это место, где игроки могут общаться, 
+                    находить команды и развиваться вместе с нами.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="news-container">
+            <h2 class="section-title">Последние новости</h2>
+            <div class="news-grid" id="telegram-news">
+                <div class="news-card">
+                    <div class="news-content">
+                        <div class="news-date">Загрузка новостей...</div>
+                        <h3 class="news-title">Пожалуйста, подождите</h3>
+                        <p class="news-excerpt">Идет загрузка последних новостей из нашего Telegram-канала.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    
+            <a href="https://t.me/FCOGY" class="telegram-link" target="_blank">
+                <i class="fab fa-telegram"></i> Подписаться на наш Telegram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© <span class="year"></span> Fcogy eSports. Все права защищены.</p>
-        <p>Владелец: k1sgerl</p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span>FCOGY</span> ESPORTS
+                </div>
+                <p class="footer-about">
+                    Профессиональная киберспортивная организация, выступающая 
+                    на международной арене в дисциплинах CS2 и Fortnite.
+                </p>
+                <div class="footer-social">
+                    <a href="https://vk.com/fcogy7team" class="social-link" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://t.me/FCOGY" class="social-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://discord.gg/53wY7eGjR9" class="social-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@fcogy-y4i" class="social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Навигация</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="index.html">Главная</a></li>
+                    <li class="footer-link"><a href="about.html">О нас</a></li>
+                    <li class="footer-link"><a href="social.html">Соцсети</a></li>
+                    <li class="footer-link"><a href="news.html">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-links">
+                    <!-- <li class="footer-link">
+                        <a href="mailto:fcogy@example.com">
+                            <i class="fas fa-envelope"></i> fcogy@example.com
+                        </a>
+                    </li> -->
+                    <li class="footer-link">
+                        <a href="https://t.me/ki7g07" target="_blank">
+                            <i class="fab fa-telegram"></i> Владелец: k1sgerl
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© <span class="year"></span> <a href="https://t.me/FCOGY" target="_blank">Fcogy eSports</a>. Все права защищены.</p>
+            <p class="developer">Сайт разработал: kepkaa ❤️</p>
+        </div>
     </footer>
 
-    <footer>
-    <p>Сделал: kepkaa</p>
-    </footer>
-    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
