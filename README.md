@@ -5,22 +5,22 @@
 Организация в фортнайте
 
 
-VK: https://vk.com/fcogy7team,
+VK: ?
 
-Telegram FCOGY: https://t.me/FCOGY,
+Telegram FCOGY: ?
 
-Telegram Kisgerl : https://t.me/ki7g07,
+Telegram Kisgerl : ?
 
-Twitter (X) FCOGY : https://x.com/fcogy7/status/1884485779306504200?s=46,
+Twitter (X) FCOGY : ?
 
-Instagram : https://www.instagram.com/fcogy_esports?igsh=MXNvYzMycXFqamRycw%3D%3D&utm_source=qr,
+Instagram : ?
 
-YouTube FCOGY : https://youtube.com/@fcogy-y4i?si=Xcu36_Vw6YD8uRxB,
+YouTube FCOGY : ?
 
-YouTube Kisgerl : https://youtube.com/@k1sgerl17?si=29scGGKPn4FgXirJ,
+YouTube Kisgerl : ?
 
-TikTok : https://www.tiktok.com/@fcogy.esports3?_t=ZN-8tUUUGTYKxy&_r=1,
+TikTok : ?
 
-TikTok Kisgerl : https://www.tiktok.com/@k1sgerl17?_t=ZT-8wT9reykjE2&_r=1
+TikTok Kisgerl : ?
 
 WebSait: https://kepkaa.github.io/fcogy-esports/index.html
